@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+:root {
+  --bg-cyan: hsl(179, 80%, 58%);
+  --bg-white: hsl(0, 0%, 100%);
+  --bg-black: hsl(230, 61%, 8%);
+  --bg-gray: hsl(224, 14%, 53%);
+  --bg-darkblue: hsl(206, 84%, 22%);
+}
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+a,
+button {
+  font-family: inherit;
+}
+a {
+  background: none;
+  text-decoration: none;
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--bg-black);
+  color: var(--bg-gray);
+}
+.logo {
+  padding: 5rem 0 15rem 20rem;
+}
+.main-three-col {
+  padding-bottom: 20rem;
+  display: flex;
+  justify-content: space-between;
+}
+.center-content {
+  background: url("../src/assets/bg-hero-squiggle.svg") no-repeat center;
+}
+h1 {
+  max-width: 500px;
+  padding: 10rem 0 3rem 0;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  color: var(--bg-white);
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 800;
+}
+h1 span {
+  color: var(--bg-cyan);
+}
+.main-para {
+  max-width: 530px;
+  padding-bottom: 6rem;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+}
+.scroll {
+  display: flex;
+  justify-content: center;
+}
+.four-col {
+  max-width: 1040px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.four-col > div {
+  max-width: 260px;
+}
+.illustrations {
+  width: 150px;
+  height: 150px;
+  border-radius: 5rem;
+  background-color: var(--bg-darkblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.four-col h3 {
+  padding: 4rem 0 3rem 0;
+  font-size: 1.8rem;
+  color: var(--bg-white);
+}
+.four-col p {
+  font-size: 1.4rem;
+  padding: 0 3rem 0 0;
+  line-height: 2.6rem;
+  font-weight: 500;
+}
+.four-col > div:nth-child(even) {
+  padding: 5rem 0 20rem 0;
+}
+h2,
+.affordable {
+  text-align: center;
+}
+h2 {
+  font-size: 3.2rem;
+  color: var(--bg-white);
+}
+.affordable {
+  max-width: 550px;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  padding: 2rem 0 8rem 0;
+  margin: 0 auto;
+}
+.two-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto 20rem auto;
+}
+.first {
+  max-width: 425px;
+  padding: 0 2rem 3.1rem 4rem;
+  background-color: var(--bg-darkblue);
+  border-radius: 1.2rem;
+}
+.second {
+  max-width: 425px;
+  padding: 0 2rem 4.2rem 4rem;
+  background-color: var(--bg-cyan);
+  border-radius: 12px;
+}
+.first p,
+.second p {
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  font-weight: 600;
+}
+.first p {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.second p {
+  color: rgba(8, 12, 33, 0.6);
+}
+.icons {
+  position: relative;
+  top: -3rem;
+}
+.first h4,
+.second h4 {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  color: var(--bg-white);
+}
+.second h4 {
+  color: var(--bg-black);
+  font-weight: 800;
+}
+.first strong,
+.second strong span {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.first strong {
+  color: var(--bg-white);
+  cursor: pointer;
+}
+.second strong {
+  color: var(--bg-black);
+  cursor: pointer;
+}
+.first-list,
+.second-list {
+  padding-top: 1.5rem;
+}
+.first-list li {
+  padding: 7px 0;
+  font-weight: 500;
+}
+.first-list li img,
+.second-list li img {
+  padding-right: 1.5rem;
+}
+.second-list li {
+  padding: 7px 0;
+  font-weight: 500;
+}
+.first-list li a,
+.second-list li a {
+  font-size: 1.6rem;
+}
+.first-list li a {
+  color: var(--bg-white);
+}
+.second-list li a {
+  color: var(--bg-black);
+}
+.first-list li a img,
+.second-list li a img {
+  display: inline-block;
+}
+footer {
+  padding-bottom: 10rem;
+  background: url("../src/assets/bg-footer-squiggle.svg") no-repeat;
+  background-position: -220px 0;
+  text-align: center;
+}
+footer h3 {
+  padding: 5rem 0;
+  font-size: 3.2rem;
+  color: var(--bg-white);
+}
+footer input {
+  width: 320px;
+  padding: 1.25rem 0;
+  background-color: var(--bg-darkblue);
+  border-radius: 3rem;
+}
+input[type="email"] {
+  font-size: 1.8rem;
+  text-indent: 2rem;
+  color: var(--bg-gray);
+  font-weight: 500;
+}
+footer button {
+  width: 120px;
+  padding: 1.25rem 0;
+  margin-left: 1rem;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  background-color: var(--bg-cyan);
+  color: var(--bg-darkblue);
+  font-weight: 700;
+}
+.illustration-mobile {
+  display: none;
+}
+label {
+  padding: 0.5rem 30rem 0 0;
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  color: hsl(0, 100%, 74%);
+  font-weight: 500;
+  visibility: hidden;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    padding: 5rem 0 10rem 5rem;
+  }
+  .main-three-col {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12rem;
+    overflow: hidden;
+    position: relative;
+  }
+  .center-content {
+    position: relative;
+    z-index: 3;
+    background-size: 400px;
+  }
+  h1 {
+    max-width: 500px;
+    padding: 10rem 0 3rem 0;
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+  }
+  .main-para {
+    max-width: 450px;
+    padding: 0 0 6rem 0;
+  }
+  .illustration-left {
+    position: absolute;
+    left: -21rem;
+  }
+  .illustration-right {
+    position: absolute;
+    right: -22rem;
+  }
+  .illustrations {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .four-col {
+    max-width: 768px;
+    flex-direction: column;
+    margin: 0 auto 10rem auto;
+  }
+  .four-col > div {
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .four-col h3 {
+    padding: 0 0 3rem 0;
+  }
+  .text {
+    max-width: 390px;
+    padding-left: 3rem;
+  }
+  .text p {
+    font-size: 1.5rem;
+  }
+  .four-col > div:nth-child(even) {
+    padding: 5rem 7rem 0 0;
+    margin-bottom: 50px;
+  }
+  .two-flex {
+    max-width: 768px;
+    flex-direction: column;
+  }
+  .first {
+    margin-bottom: 8rem;
+  }
+  .illustration-mobile {
+    display: none;
+  }
+  footer {
+    background-position: -370px 0px;
+  }
+  footer h3 {
+    padding: 7rem 0 5rem 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .logo {
+    padding: 5rem 0 10rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  .main-three-col {
+    flex-direction: column;
+  }
+  .center-content {
+    background: none;
+  }
+  h1 {
+    font-size: 4.8rem;
+    line-height: 5.4rem;
+    padding: 7rem 3rem 5rem 3rem;
+  }
+  .main-para {
+    max-width: 317px;
+  }
+  .illustration-mobile {
+    display: block;
+  }
+  .illustration-left,
+  .illustration-right {
+    display: none;
+  }
+  .four-col {
+    max-width: 375px;
+    flex-direction: column;
+    margin: 0 auto 5rem auto;
+  }
+  .four-col > div {
+    max-width: 375px;
+    flex-direction: column;
+  }
+  .illustrations {
+  }
+  .text {
+    padding-left: 0;
+    text-align: center;
+  }
+  .four-col > div:nth-child(even) {
+    padding: 5rem 0 0 0;
+  }
+  .four-col h3 {
+    font-size: 1.8rem;
+    padding: 4rem 0 3rem 0;
+  }
+  .four-col p {
+    padding: 0 20px 0 20px;
+  }
+  .affordable {
+    max-width: 375px;
+    padding: 2rem 3rem 8rem 3rem;
+    margin: 0 auto;
+  }
+  .two-flex {
+    max-width: 375px;
+    flex-direction: column;
+    margin: 0 auto 10rem auto;
+  }
+  .first,
+  .second {
+    max-width: 345px;
+  }
+  footer {
+    background: url("../src/assets/bg-footer-squiggle.svg") no-repeat left top;
+    background-size: 375px;
+  }
+  footer h3 {
+    padding: 0 3rem 2rem 3rem;
+  }
+  footer button {
+    display: block;
+    width: 320px;
+    height: 50px;
+    margin: 4rem auto 0 auto;
+    font-size: 1.8rem;
+  }
+  label {
+    padding: 0.5rem 15rem 0 0;
+    position: relative;
+    top: -9rem;
+  }
+}
